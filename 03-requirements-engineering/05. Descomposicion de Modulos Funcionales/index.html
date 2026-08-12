@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../1-system-context-diagram/">
+        <link rel="prev" href="../04.%20Registros%20de%20Elicitacion/">
       
       
-        <link rel="next" href="../3-domain-glossary/">
+        <link rel="next" href="../06.%20Requisitos%20No%20Funcionales%20Globales/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>02. Definición de Actores y Roles - Adí — Documentación del Proyecto</title>
+        <title>05. Descomposición de Módulos Funcionales - Adí — Documentación del Proyecto</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#definicion-de-actores-y-roles-entregable-2" class="md-skip">
+        <a href="#05-descomposicion-de-modulos-funcionales" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              02. Definición de Actores y Roles
+              05. Descomposición de Módulos Funcionales
             
           </span>
         </div>
@@ -1652,14 +1652,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../00-phase-3-brief/" class="md-nav__link">
+      <a href="../01.%20Diagrama%20de%20Contexto%20del%20Sistema/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    00. Brief Ejecutivo Fase 3
+    01. Diagrama de Contexto del Sistema
   
 
     
@@ -1680,14 +1680,70 @@
   
   
     <li class="md-nav__item">
-      <a href="../1-system-context-diagram/" class="md-nav__link">
+      <a href="../02.%20Definicion%20de%20Actores%20y%20Roles/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    01. Diagrama de Contexto del Sistema
+    02. Definición de Actores y Roles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03.%20Glosario%20de%20Dominio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Glosario de Dominio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04.%20Registros%20de%20Elicitacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Registros de Elicitación
   
 
     
@@ -1724,7 +1780,7 @@
   <span class="md-ellipsis">
     
   
-    02. Definición de Actores y Roles
+    05. Descomposición de Módulos Funcionales
   
 
     
@@ -1742,7 +1798,7 @@
   <span class="md-ellipsis">
     
   
-    02. Definición de Actores y Roles
+    05. Descomposición de Módulos Funcionales
   
 
     
@@ -1768,22 +1824,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-catalogo-de-actores" class="md-nav__link">
+  <a href="#1-metadatos-del-documento" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Catálogo de Actores
+        1. Metadatos del Documento
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Catálogo de Actores">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-arquitectura-modular-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Arquitectura Modular del Sistema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-resumen-de-especificaciones-por-modulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Resumen de Especificaciones por Módulo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Resumen de Especificaciones por Módulo">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#11-actores-humanos" class="md-nav__link">
+  <a href="#modulo-1-mod-cat-gestion-de-catalogo-e-inventario-relacional" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.1 Actores Humanos
+        Módulo 1: MOD-CAT — Gestión de Catálogo e Inventario Relacional
       
     </span>
   </a>
@@ -1791,10 +1869,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#12-actores-automatizados" class="md-nav__link">
+  <a href="#modulo-2-mod-imp-ingesta-masiva-por-lotes-y-procesamiento-de-imagenes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.2 Actores Automatizados
+        Módulo 2: MOD-IMP — Ingesta Masiva por Lotes y Procesamiento de Imágenes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modulo-3-mod-ven-motor-transaccional-de-ventas-y-emision-de-colillas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulo 3: MOD-VEN — Motor Transaccional de Ventas y Emisión de Colillas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modulo-4-mod-adm-panel-administrativo-control-de-acceso-y-metricas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulo 4: MOD-ADM — Panel Administrativo, Control de Acceso y Métricas
       
     </span>
   </a>
@@ -1807,10 +1907,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-matriz-de-permisos-rbac-role-based-access-control" class="md-nav__link">
+  <a href="#4-matriz-de-dependencias-inter-modulo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Matriz de Permisos RBAC (Role-Based Access Control)
+        4. Matriz de Dependencias Inter-Módulo
       
     </span>
   </a>
@@ -1833,91 +1933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../3-domain-glossary/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    03. Glosario de Dominio
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../4-elicitation-records/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    04. Registros de Elicitación
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../5-functional-module-decomposition/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    05. Descomposición de Módulos Funcionales
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../6-non-functional-requirements-global/" class="md-nav__link">
+      <a href="../06.%20Requisitos%20No%20Funcionales%20Globales/" class="md-nav__link">
         
   
   
@@ -1944,62 +1960,15 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_5_8" id="__nav_5_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    07. Especificaciones de Módulo
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    07. Especificaciones de Módulo
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../7.modules-specification/1-MOD-CAT/" class="md-nav__link">
+      <a href="../07.%20Modulo%20CAT%20-%20Catalogo%20e%20Inventario/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MOD-CAT Catálogo e Inventario
+    07. Módulo CAT - Catálogo e Inventario
   
 
     
@@ -2020,14 +1989,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../7.modules-specification/2-MOD-IMP/" class="md-nav__link">
+      <a href="../08.%20Modulo%20IMP%20-%20Ingesta%20por%20Lotes/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MOD-IMP Ingesta por Lotes
+    08. Módulo IMP - Ingesta por Lotes
   
 
     
@@ -2048,14 +2017,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../7.modules-specification/3-MOD-VEN/" class="md-nav__link">
+      <a href="../09.%20Modulo%20VEN%20-%20Punto%20de%20Venta%20y%20Colillas/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MOD-VEN Punto de Venta y Colillas
+    09. Módulo VEN - Punto de Venta y Colillas
   
 
     
@@ -2076,14 +2045,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../7.modules-specification/4-MOD-ADM/" class="md-nav__link">
+      <a href="../10.%20Modulo%20ADM%20-%20Panel%20Administrativo/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MOD-ADM Panel Administrativo
+    10. Módulo ADM - Panel Administrativo
   
 
     
@@ -2097,9 +2066,29 @@
 
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11.%20SRS%20e%20Integracion%20del%20Sistema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. SRS e Integración del Sistema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -2112,14 +2101,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../8-srs-and-system-integration/" class="md-nav__link">
+      <a href="../12.%20Resumen%20Ejecutivo%20Fase%203/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    08. SRS e Integración del Sistema
+    12. Resumen Ejecutivo Fase 3
   
 
     
@@ -2167,22 +2156,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-catalogo-de-actores" class="md-nav__link">
+  <a href="#1-metadatos-del-documento" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Catálogo de Actores
+        1. Metadatos del Documento
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Catálogo de Actores">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-arquitectura-modular-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Arquitectura Modular del Sistema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-resumen-de-especificaciones-por-modulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Resumen de Especificaciones por Módulo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Resumen de Especificaciones por Módulo">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#11-actores-humanos" class="md-nav__link">
+  <a href="#modulo-1-mod-cat-gestion-de-catalogo-e-inventario-relacional" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.1 Actores Humanos
+        Módulo 1: MOD-CAT — Gestión de Catálogo e Inventario Relacional
       
     </span>
   </a>
@@ -2190,10 +2201,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#12-actores-automatizados" class="md-nav__link">
+  <a href="#modulo-2-mod-imp-ingesta-masiva-por-lotes-y-procesamiento-de-imagenes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.2 Actores Automatizados
+        Módulo 2: MOD-IMP — Ingesta Masiva por Lotes y Procesamiento de Imágenes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modulo-3-mod-ven-motor-transaccional-de-ventas-y-emision-de-colillas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulo 3: MOD-VEN — Motor Transaccional de Ventas y Emisión de Colillas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modulo-4-mod-adm-panel-administrativo-control-de-acceso-y-metricas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulo 4: MOD-ADM — Panel Administrativo, Control de Acceso y Métricas
       
     </span>
   </a>
@@ -2206,10 +2239,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-matriz-de-permisos-rbac-role-based-access-control" class="md-nav__link">
+  <a href="#4-matriz-de-dependencias-inter-modulo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Matriz de Permisos RBAC (Role-Based Access Control)
+        4. Matriz de Dependencias Inter-Módulo
       
     </span>
   </a>
@@ -2233,88 +2266,74 @@
 
 
 
-<h1 id="definicion-de-actores-y-roles-entregable-2">Definición de Actores y Roles (Entregable 2)</h1>
+<h1 id="05-descomposicion-de-modulos-funcionales">05. Descomposición de Módulos Funcionales</h1>
+<h3 id="1-metadatos-del-documento">1. Metadatos del Documento</h3>
 <p><strong>Proyecto:</strong> Adí (Gestión de Inventario y CRM de Calzado Deportivo)<br />
-<strong>ID del Documento:</strong> D2-ACTOR-ROLE-DEFINITION<br />
-<strong>Fase:</strong> 3 — Ingeniería de Requisitos (Capa 1)  </p>
+<strong>Fase:</strong> 3 — Ingeniería de Requisitos<br />
+<strong>Entregable:</strong> 5 de 12 (D5 — Descomposición de Módulos Funcionales)<br />
+<strong>Estado:</strong> Aprobado  </p>
 <hr />
-<h2 id="1-catalogo-de-actores">1. Catálogo de Actores</h2>
-<h3 id="11-actores-humanos">1.1 Actores Humanos</h3>
-<ol>
-<li><strong><code>ACT-ADM</code> — Administrador del Sistema:</strong> Usuario con acceso total a la configuración del negocio, gestión de usuarios, auditoría de precios de costo, márgenes de ganancia y reportes consolidados.</li>
-<li><strong><code>ACT-OPE</code> — Operador de Inventario:</strong> Responsable de la catalogación de marcas y modelos, ingesta por lotes de mercancía importada, asignación de SKUs, carga de fotos y ajustes de existencias.</li>
-<li><strong><code>ACT-VEN</code> — Cajero / Vendedor:</strong> Usuario operativo en punto de venta con permisos para consultar stock en tiempo real, buscar calzado por modelo/talla/color, registrar transacciones de venta y emitir colillas/comprobantes.</li>
-</ol>
-<h3 id="12-actores-automatizados">1.2 Actores Automatizados</h3>
-<ol>
-<li><strong><code>SYS-IMP</code> — Procesador de Lotes Asíncrono:</strong> Servicio en segundo plano que valida archivos CSV de carga masiva, procesa compresión WebP de fotos e inserta transaccionalmente nuevos SKUs.</li>
-<li><strong><code>SYS-ALR</code> — Motor de Alertas de Stock:</strong> Worker en segundo plano que evalúa los umbrales de stock mínimo y emite alertas cuando un SKU por talla/color alcanza el nivel de reabastecimiento.</li>
-</ol>
-<hr />
-<h2 id="2-matriz-de-permisos-rbac-role-based-access-control">2. Matriz de Permisos RBAC (Role-Based Access Control)</h2>
+<h3 id="2-arquitectura-modular-del-sistema">2. Arquitectura Modular del Sistema</h3>
+<p>El sistema Adí se descompone en <strong>4 módulos funcionales principales</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>+-----------------------------------------------------------------------------------+
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>|                                     SISTEMA ADÍ                                   |
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>+-------------------+-------------------+-------------------+-----------------------+
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>| MOD-CAT           | MOD-IMP           | MOD-VEN           | MOD-ADM               |
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>| Gestión de        | Ingesta Masiva    | Punto de Venta &amp;  | Panel Administrativo  |
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>| Catálogo &amp; Stock  | por Lotes e Foto  | Emisión Colillas  | &amp; Auditoría RBAC      |
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>| Relacional        | WebP Pipeline     | Transaccional     | Web Responsivo        |
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>+-------------------+-------------------+-------------------+-----------------------+
+</code></pre></div>
+<h3 id="3-resumen-de-especificaciones-por-modulo">3. Resumen de Especificaciones por Módulo</h3>
+<h4 id="modulo-1-mod-cat-gestion-de-catalogo-e-inventario-relacional">Módulo 1: <code>MOD-CAT</code> — Gestión de Catálogo e Inventario Relacional</h4>
+<ul>
+<li><strong>Tecnología Principal:</strong> Node.js (TypeScript) / Python (FastAPI), PostgreSQL / SQLite.</li>
+<li><strong>Responsabilidades:</strong> Administra las entidades de Marcas, Modelos, SKUs de proveedor internacional, Colorways, Tallas (US/EU/COL), Tipo de Par (Par completo, Pie izquierdo, Pie derecho, Muestra) y Alertas de Stock Mínimo.</li>
+</ul>
+<h4 id="modulo-2-mod-imp-ingesta-masiva-por-lotes-y-procesamiento-de-imagenes">Módulo 2: <code>MOD-IMP</code> — Ingesta Masiva por Lotes y Procesamiento de Imágenes</h4>
+<ul>
+<li><strong>Tecnología Principal:</strong> Node.js / Python worker, CDN Cloud Storage, compresión WebP.</li>
+<li><strong>Responsabilidades:</strong> Recibe archivos CSV / JSON de manifiestos de importación, ejecuta inserción por volumen (bulk insert), realiza compresión WebP de fotografías de zapatillas y vincula URLs con las variantes de inventario.</li>
+</ul>
+<h4 id="modulo-3-mod-ven-motor-transaccional-de-ventas-y-emision-de-colillas">Módulo 3: <code>MOD-VEN</code> — Motor Transaccional de Ventas y Emisión de Colillas</h4>
+<ul>
+<li><strong>Tecnología Principal:</strong> Backend REST API, Motor de Impresión PDF/POS HTML5.</li>
+<li><strong>Responsabilidades:</strong> Procesa la búsqueda y carrito de ventas, efectúa el descuento atómico de existencias con aislamiento ACID, genera colillas transaccionales con código de barras/QR y gestiona devoluciones o cambios.</li>
+</ul>
+<h4 id="modulo-4-mod-adm-panel-administrativo-control-de-acceso-y-metricas">Módulo 4: <code>MOD-ADM</code> — Panel Administrativo, Control de Acceso y Métricas</h4>
+<ul>
+<li><strong>Tecnología Principal:</strong> Web Standards (React / Vue / HTML5 / CSS Vanilla), Auth JWT / bcrypt.</li>
+<li><strong>Responsabilidades:</strong> Provee la interfaz web responsiva para la administración global del negocio, gestión de usuarios/roles, auditoría de precios de costo vs venta y dashboards de stock.</li>
+</ul>
+<h3 id="4-matriz-de-dependencias-inter-modulo">4. Matriz de Dependencias Inter-Módulo</h3>
 <table>
 <thead>
 <tr>
-<th>Código de Módulo / Acción</th>
-<th><code>ACT-ADM</code> (Admin)</th>
-<th><code>ACT-OPE</code> (Operador)</th>
-<th><code>ACT-VEN</code> (Cajero)</th>
+<th>Módulo Target</th>
+<th>Depende De</th>
+<th>Mecanismo de Interfaz</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><code>MOD-CAT</code> — Crear / Editar Marca y Modelo</strong></td>
-<td><strong>Permitido</strong></td>
-<td><strong>Permitido</strong></td>
-<td>Solo Lectura</td>
+<td><code>MOD-CAT</code></td>
+<td>Base de Datos Relacional</td>
+<td>ORM / Consultas SQL con Índices</td>
 </tr>
 <tr>
-<td><strong><code>MOD-CAT</code> — Consultar Inventario y Tallas</strong></td>
-<td><strong>Permitido</strong></td>
-<td><strong>Permitido</strong></td>
-<td><strong>Permitido</strong></td>
+<td><code>MOD-IMP</code></td>
+<td><code>MOD-CAT</code>, CDN Cloud Storage</td>
+<td>API Interna / Pipelines Asíncronos</td>
 </tr>
 <tr>
-<td><strong><code>MOD-CAT</code> — Ver Costos de Importación</strong></td>
-<td><strong>Permitido</strong></td>
-<td>Restringido</td>
-<td>Prohibido</td>
+<td><code>MOD-VEN</code></td>
+<td><code>MOD-CAT</code>, BD Relacional</td>
+<td>Transacciones SQL ACID / REST API</td>
 </tr>
 <tr>
-<td><strong><code>MOD-IMP</code> — Carga Masiva por Lotes</strong></td>
-<td><strong>Permitido</strong></td>
-<td><strong>Permitido</strong></td>
-<td>Prohibido</td>
-</tr>
-<tr>
-<td><strong><code>MOD-IMP</code> — Ajuste Manual de Existencias</strong></td>
-<td><strong>Permitido</strong></td>
-<td><strong>Permitido</strong></td>
-<td>Prohibido</td>
-</tr>
-<tr>
-<td><strong><code>MOD-VEN</code> — Registrar Venta y Generar Colilla</strong></td>
-<td><strong>Permitido</strong></td>
-<td>Prohibido</td>
-<td><strong>Permitido</strong></td>
-</tr>
-<tr>
-<td><strong><code>MOD-VEN</code> — Cancelar / Anular Transacción</strong></td>
-<td><strong>Permitido</strong></td>
-<td>Prohibido</td>
-<td>Restringido (Aprobación)</td>
-</tr>
-<tr>
-<td><strong><code>MOD-ADM</code> — Gestión de Usuarios y Roles</strong></td>
-<td><strong>Permitido</strong></td>
-<td>Prohibido</td>
-<td>Prohibido</td>
-</tr>
-<tr>
-<td><strong><code>MOD-ADM</code> — Ver Métricas y Analítica de Margen</strong></td>
-<td><strong>Permitido</strong></td>
-<td>Prohibido</td>
-<td>Prohibido</td>
+<td><code>MOD-ADM</code></td>
+<td><code>MOD-CAT</code>, <code>MOD-IMP</code>, <code>MOD-VEN</code></td>
+<td>REST API / Middleware Auth JWT</td>
 </tr>
 </tbody>
 </table>
