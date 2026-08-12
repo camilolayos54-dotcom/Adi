@@ -1,0 +1,97 @@
+site_name: Adí — Documentación del Proyecto
+site_description: Documentación completa y entregables del proyecto Adí
+site_author: Equipo Adí
+
+theme:
+  name: material
+  language: es
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+
+nav:
+  - Inicio: index.md
+  - 00. Reconocimiento del Problema:
+      - 01. Declaración del Problema: 00-reconocimiento-del-problema/01. Declaración del Problema.md
+      - 02. Registro de Evidencias: 00-reconocimiento-del-problema/02. Registro de Evidencias.md
+      - 03. Análisis de Soluciones Existentes: 00-reconocimiento-del-problema/03. Análisis de Soluciones Existentes.md
+      - 04. Clasificación del Problema: 00-reconocimiento-del-problema/04. Clasificación del Problema.md
+      - 05. Matriz de Impacto: 00-reconocimiento-del-problema/05. Matriz de Impacto.md
+      - 06. Objetivos del Proyecto: 00-reconocimiento-del-problema/06. Objetivos del Proyecto.md
+      - 07. Mapa de Interesados: 00-reconocimiento-del-problema/07. Mapa de Interesados.md
+      - 08. Registro de Riesgos: 00-reconocimiento-del-problema/08. Registro de Riesgos.md
+      - 09. Go No-Go Signal: 00-reconocimiento-del-problema/09. Go No-Go Signal.md
+      - 10. Registro de Patrones: 00-reconocimiento-del-problema/10. Registro de Patrones.md
+      - 11. Brief Ejecutivo: 00-reconocimiento-del-problema/11. Brief Ejecutivo.md
+  - 01. Viabilidad Temprana:
+      - 01. Perfil de Usuario: 01-viabilidad-temprana/01. Perfil de Usuario.md
+      - 02. Validación de Mercado: 01-viabilidad-temprana/02. Validación de Mercado.md
+      - 03. Análisis Competitivo: 01-viabilidad-temprana/03. Análisis Competitivo.md
+      - 04. Mapa de Partes Interesadas: 01-viabilidad-temprana/04. Mapa de Partes Interesadas.md
+      - 05. Registro de Factibilidad Técnica: 01-viabilidad-temprana/05. Registro de Factibilidad Técnica.md
+      - 06. Accesibilidad de Datos: 01-viabilidad-temprana/06. Accesibilidad de Datos.md
+      - 07. Despeje Legal y Regulatorio: 01-viabilidad-temprana/07. Despeje Legal y Regulatorio.md
+      - 08. Capacidad del Equipo: 01-viabilidad-temprana/08. Capacidad del Equipo.md
+      - 09. Viabilidad de la Solución: 01-viabilidad-temprana/09. Viabilidad de la Solucion.md
+      - 10. Registro de Riesgos: 01-viabilidad-temprana/10. Registro de Riesgos.md
+      - 11. Supuestos Críticos: 01-viabilidad-temprana/11. Supuestos Críticos.md
+      - 12. Definición del MVP: 01-viabilidad-temprana/12. Definicion del MVP.md
+      - 13. Lean Canvas: 01-viabilidad-temprana/13. Lean Canvas.md
+      - 14. OKRs y Objetivos: 01-viabilidad-temprana/14. OKRs y Objetivos.md
+      - 15. Plan Inicial de Proyecto: 01-viabilidad-temprana/15. Plan Inicial de Proyecto.md
+      - 16. Proceso de Trabajo y Herramientas: 01-viabilidad-temprana/16. Proceso de Trabajo y Herramientas.md
+      - 17. Decisión Go-NoGo: 01-viabilidad-temprana/17. Decision Go-NoGo.md
+      - 18. Resumen Ejecutivo Fase 1: 01-viabilidad-temprana/18. Resumen Ejecutivo Fase 1.md
+  - 02. Project Kickoff:
+      - 01. Identidad del Proyecto: 02-project-kickoff/01. Identidad del Proyecto.md
+      - 02. Restricciones No Funcionales: 02-project-kickoff/02. Restricciones No Funcionales.md
+      - 03. Decisión de Stack: 02-project-kickoff/03. Decision de Stack.md
+      - 04. Estructura del Repositorio: 02-project-kickoff/04. Estructura del Repositorio.md
+      - 05. Branching Strategy: 02-project-kickoff/05. Branching Strategy.md
+      - 06. Entornos: 02-project-kickoff/06. Entornos.md
+      - 07. Estándares de Codificación: 02-project-kickoff/07. Estandares de Codificacion.md
+      - 08. Estrategia de Pruebas: 02-project-kickoff/08. Estrategia de Pruebas.md
+      - 09. Definition of Done: 02-project-kickoff/09. Definition of Done.md
+      - 10. Tooling: 02-project-kickoff/10. Tooling.md
+      - 11. Protocolos de Comunicación: 02-project-kickoff/11. Protocolos de Comunicacion.md
+      - 12. Actualización Registro de Riesgos: 02-project-kickoff/12. Actualizacion Registro de Riesgos.md
+      - 13. Resumen Ejecutivo Fase 2: 02-project-kickoff/13. Resumen Ejecutivo Fase 2.md
