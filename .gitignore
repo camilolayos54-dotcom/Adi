@@ -1,0 +1,8 @@
+# MkDocs build directory
+site/
+
+# IDE and OS
+.idea/
+*.iml
+.DS_Store
+Thumbs.db

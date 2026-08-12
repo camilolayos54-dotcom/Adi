@@ -21,10 +21,9 @@ theme:
         icon: material/brightness-4
         name: Cambiar a modo claro
   features:
-    - navigation.indexes
     - navigation.instant
     - navigation.tracking
-    - navigation.tabs
+    - navigation.sections
     - navigation.top
     - search.suggest
     - search.highlight
@@ -51,10 +50,10 @@ markdown_extensions:
 nav:
   - Inicio: index.md
   - 00. Reconocimiento del Problema:
-      - 01. Declaración del Problema: 00-reconocimiento-del-problema/01. Declaración del Problema.md
+      - 01. Declaración del Problema: 00-reconocimiento-del-problema/01. Declaracion del Problema.md
       - 02. Registro de Evidencias: 00-reconocimiento-del-problema/02. Registro de Evidencias.md
-      - 03. Análisis de Soluciones Existentes: 00-reconocimiento-del-problema/03. Análisis de Soluciones Existentes.md
-      - 04. Clasificación del Problema: 00-reconocimiento-del-problema/04. Clasificación del Problema.md
+      - 03. Análisis de Soluciones Existentes: 00-reconocimiento-del-problema/03. Analisis de Soluciones Existentes.md
+      - 04. Clasificación del Problema: 00-reconocimiento-del-problema/04. Clasificacion del Problema.md
       - 05. Matriz de Impacto: 00-reconocimiento-del-problema/05. Matriz de Impacto.md
       - 06. Objetivos del Proyecto: 00-reconocimiento-del-problema/06. Objetivos del Proyecto.md
       - 07. Mapa de Interesados: 00-reconocimiento-del-problema/07. Mapa de Interesados.md
@@ -64,16 +63,16 @@ nav:
       - 11. Brief Ejecutivo: 00-reconocimiento-del-problema/11. Brief Ejecutivo.md
   - 01. Viabilidad Temprana:
       - 01. Perfil de Usuario: 01-viabilidad-temprana/01. Perfil de Usuario.md
-      - 02. Validación de Mercado: 01-viabilidad-temprana/02. Validación de Mercado.md
-      - 03. Análisis Competitivo: 01-viabilidad-temprana/03. Análisis Competitivo.md
+      - 02. Validación de Mercado: 01-viabilidad-temprana/02. Validacion de Mercado.md
+      - 03. Análisis Competitivo: 01-viabilidad-temprana/03. Analisis Competitivo.md
       - 04. Mapa de Partes Interesadas: 01-viabilidad-temprana/04. Mapa de Partes Interesadas.md
-      - 05. Registro de Factibilidad Técnica: 01-viabilidad-temprana/05. Registro de Factibilidad Técnica.md
+      - 05. Registro de Factibilidad Técnica: 01-viabilidad-temprana/05. Registro de Factibilidad Tecnica.md
       - 06. Accesibilidad de Datos: 01-viabilidad-temprana/06. Accesibilidad de Datos.md
       - 07. Despeje Legal y Regulatorio: 01-viabilidad-temprana/07. Despeje Legal y Regulatorio.md
       - 08. Capacidad del Equipo: 01-viabilidad-temprana/08. Capacidad del Equipo.md
       - 09. Viabilidad de la Solución: 01-viabilidad-temprana/09. Viabilidad de la Solucion.md
       - 10. Registro de Riesgos: 01-viabilidad-temprana/10. Registro de Riesgos.md
-      - 11. Supuestos Críticos: 01-viabilidad-temprana/11. Supuestos Críticos.md
+      - 11. Supuestos Críticos: 01-viabilidad-temprana/11. Supuestos Criticos.md
       - 12. Definición del MVP: 01-viabilidad-temprana/12. Definicion del MVP.md
       - 13. Lean Canvas: 01-viabilidad-temprana/13. Lean Canvas.md
       - 14. OKRs y Objetivos: 01-viabilidad-temprana/14. OKRs y Objetivos.md
