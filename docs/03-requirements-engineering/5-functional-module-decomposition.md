@@ -1,0 +1,49 @@
+# Descomposición de Módulos Funcionales (Entregable 5)
+
+**Proyecto:** Adí (Gestión de Inventario y CRM de Calzado Deportivo)  
+**ID del Documento:** D5-FUNCTIONAL-MODULE-DECOMPOSITION  
+**Fase:** 3 — Ingeniería de Requisitos (Capa 1)  
+
+---
+
+## 1. Arquitectura Modular del Sistema
+
+El sistema Adí se descompone en **4 módulos funcionales principales**:
+
+```
++-----------------------------------------------------------------------------------+
+|                                     SISTEMA ADÍ                                   |
++-------------------+-------------------+-------------------+-----------------------+
+| MOD-CAT           | MOD-IMP           | MOD-VEN           | MOD-ADM               |
+| Gestión de        | Ingesta Masiva    | Punto de Venta &  | Panel Administrativo  |
+| Catálogo & Stock  | por Lotes e Foto  | Emisión Colillas  | & Auditoría RBAC      |
+| Relacional        | WebP Pipeline     | Transaccional     | Web Responsivo        |
++-------------------+-------------------+-------------------+-----------------------+
+```
+
+## 2. Resumen de Especificaciones por Módulo
+
+### Módulo 1: `MOD-CAT` — Gestión de Catálogo e Inventario Relacional
+* **Tecnología Principal:** Node.js (TypeScript) / Python (FastAPI), PostgreSQL / SQLite.
+* **Responsabilidades:** Administra las entidades de Marcas, Modelos, SKUs de proveedor internacional, Colorways, Tallas (US/EU/COL), Tipo de Par (Par completo, Pie izquierdo, Pie derecho, Muestra) y Alertas de Stock Mínimo.
+
+### Módulo 2: `MOD-IMP` — Ingesta Masiva por Lotes y Procesamiento de Imágenes
+* **Tecnología Principal:** Node.js / Python worker, CDN Cloud Storage, compresión WebP.
+* **Responsabilidades:** Recibe archivos CSV / JSON de manifestos de importación, ejecuta inserción por volumen (bulk insert), realiza compresión WebP de fotografías de zapatillas y vincula URLs con las variantes de inventario.
+
+### Módulo 3: `MOD-VEN` — Motor Transaccional de Ventas y Emisión de Colillas
+* **Tecnología Principal:** Backend REST API, Motor de Impresión PDF/POS HTML5.
+* **Responsabilidades:** Procesa la búsqueda y carrito de ventas, efectúa el descuento atómico de existencias con aislamiento ACID, genera colillas transaccionales con código de barras/QR y gestiona devoluciones o cambios.
+
+### Módulo 4: `MOD-ADM` — Panel Administrativo, Control de Acceso y Métricas
+* **Tecnología Principal:** Web Standards (React / Vue / HTML5 / CSS Vanilla), Auth JWT / bcrypt.
+* **Responsabilidades:** Provee la interfaz web responsiva para la administración global del negocio, gestión de usuarios/roles, auditoría de precios de costo vs venta y dashboards de stock.
+
+## 3. Matriz de Dependencias Inter-Módulo
+
+| Módulo Target | Depende De | Mecanismo de Interfaz |
+|---|---|---|
+| `MOD-CAT` | Base de Datos Relacional | ORM / Consultas SQL con Índices |
+| `MOD-IMP` | `MOD-CAT`, CDN Cloud Storage | API Interna / Pipelines Asíncronos |
+| `MOD-VEN` | `MOD-CAT`, BD Relacional | Transacciones SQL ACID / REST API |
+| `MOD-ADM` | `MOD-CAT`, `MOD-IMP`, `MOD-VEN` | REST API / Middleware Auth JWT |

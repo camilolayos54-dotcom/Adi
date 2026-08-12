@@ -10,6 +10,7 @@ Bienvenido a la documentación central del **Proyecto Adí**. Este sitio consoli
 graph LR
     Fase0["00. Reconocimiento del Problema"] --> Fase1["01. Viabilidad Temprana"]
     Fase1 --> Fase2["02. Project Kickoff"]
+    Fase2 --> Fase3["03. Ingeniería de Requisitos"]
 ```
 
 ### Secciones Principales
@@ -22,6 +23,10 @@ graph LR
 
 3. **02. Project Kickoff**
    - Identidad del proyecto, restricciones no funcionales, decisión de stack tecnológico, estructura de repositorio, branching strategy, estándares de codificación, estrategia de pruebas y resumen ejecutivo de la Fase 2.
+
+4. **03. Ingeniería de Requisitos**
+   - Brief ejecutivo, diagrama de contexto del sistema, definición de actores RBAC, glosario de dominio, registros de elicitación, descomposición de módulos funcionales (`MOD-CAT`, `MOD-IMP`, `MOD-VEN`, `MOD-ADM`), NFRs globales, especificaciones de módulo y SRS e integración del sistema.
+
 
 ---
 

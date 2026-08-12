@@ -1,0 +1,29 @@
+# Registros de Elicitación (Entregable 4)
+
+**Proyecto:** Adí (Gestión de Inventario y CRM de Calzado Deportivo)  
+**ID del Documento:** D4-ELICITATION-RECORDS  
+**Fase:** 3 — Ingeniería de Requisitos (Capa 1)  
+
+---
+
+## 1. Registro de Sesión de Elicitación ELIC-01: Gestión de Catálogo y Lotes
+
+* **Fecha / Participantes:** Agosto 2026 / Gerente de Operaciones (`ACT-ADM`), Operador de Ingesta (`ACT-OPE`), Arquitecto de Software.
+* **Tópico Principal:** Ingesta por lote de manifiestos internacionales y manejo de variaciones de calzado.
+* **Hallazgos Clave:**
+  1. El registro manual de cada par individual por plantilla en hojas de cálculo toma ~15 horas semanales y genera descuadres en la equivalencia de tallas (US vs EU vs COL).
+  2. Los lotes de importación contienen SKUs propios del proveedor que deben vincularse automáticamente con las fotos comprimidas.
+  3. Se requiere soporte explícito para pares disueltos (pie izquierdo suelto, pie derecho suelto, o muestra) ya que frecuentemente se pierden o dañan en exhibición.
+* **Requisitos Extraídos:** `CR-CAT-01` a `CR-CAT-06`, `CR-IMP-01` a `CR-IMP-05`.
+
+---
+
+## 2. Registro de Sesión de Elicitación ELIC-02: Punto de Venta y Colillas
+
+* **Fecha / Participantes:** Agosto 2026 / Vendedor Senior (`ACT-VEN`), Contador / Auditor, Arquitecto de Software.
+* **Tópico Principal:** Transacciones de venta, rapidez en caja y emisión de comprobantes.
+* **Hallazgos Clave:**
+  1. En hora pico, el vendedor necesita encontrar si hay disponibilidad de una talla específica en < 2 segundos sin levantarse del mostrador.
+  2. Al confirmar una venta, la colilla física o digital debe imprimirse inmediatamente con un código QR / de barras para eventuales cambios de garantía.
+  3. La deducción de stock debe ser atómica en la base de datos relacional para evitar vender el mismo par a dos clientes simultáneamente.
+* **Requisitos Extraídos:** `CR-VEN-01` a `CR-VEN-06`, `NFR-01`, `NFR-02`.

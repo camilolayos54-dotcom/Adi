@@ -1,0 +1,34 @@
+# Definición de Actores y Roles (Entregable 2)
+
+**Proyecto:** Adí (Gestión de Inventario y CRM de Calzado Deportivo)  
+**ID del Documento:** D2-ACTOR-ROLE-DEFINITION  
+**Fase:** 3 — Ingeniería de Requisitos (Capa 1)  
+
+---
+
+## 1. Catálogo de Actores
+
+### 1.1 Actores Humanos
+1. **`ACT-ADM` — Administrador del Sistema:** Usuario con acceso total a la configuración del negocio, gestión de usuarios, auditoría de precios de costo, márgenes de ganancia y reportes consolidados.
+2. **`ACT-OPE` — Operador de Inventario:** Responsable de la catalogación de marcas y modelos, ingesta por lotes de mercancía importada, asignación de SKUs, carga de fotos y ajustes de existencias.
+3. **`ACT-VEN` — Cajero / Vendedor:** Usuario operativo en punto de venta con permisos para consultar stock en tiempo real, buscar calzado por modelo/talla/color, registrar transacciones de venta y emitir colillas/comprobantes.
+
+### 1.2 Actores Automatizados
+1. **`SYS-IMP` — Procesador de Lotes Asíncrono:** Servicio en segundo plano que valida archivos CSV de carga masiva, procesa compresión WebP de fotos e inserta transaccionalmente nuevos SKUs.
+2. **`SYS-ALR` — Motor de Alertas de Stock:** Worker en segundo plano que evalúa los umbrales de stock mínimo y emite alertas cuando un SKU por talla/color alcanza el nivel de reabastecimiento.
+
+---
+
+## 2. Matriz de Permisos RBAC (Role-Based Access Control)
+
+| Código de Módulo / Acción | `ACT-ADM` (Admin) | `ACT-OPE` (Operador) | `ACT-VEN` (Cajero) |
+| --- | --- | --- | --- |
+| **`MOD-CAT` — Crear / Editar Marca y Modelo** | **Permitido** | **Permitido** | Solo Lectura |
+| **`MOD-CAT` — Consultar Inventario y Tallas** | **Permitido** | **Permitido** | **Permitido** |
+| **`MOD-CAT` — Ver Costos de Importación** | **Permitido** | Restringido | Prohibido |
+| **`MOD-IMP` — Carga Masiva por Lotes** | **Permitido** | **Permitido** | Prohibido |
+| **`MOD-IMP` — Ajuste Manual de Existencias** | **Permitido** | **Permitido** | Prohibido |
+| **`MOD-VEN` — Registrar Venta y Generar Colilla**| **Permitido** | Prohibido | **Permitido** |
+| **`MOD-VEN` — Cancelar / Anular Transacción** | **Permitido** | Prohibido | Restringido (Aprobación) |
+| **`MOD-ADM` — Gestión de Usuarios y Roles** | **Permitido** | Prohibido | Prohibido |
+| **`MOD-ADM` — Ver Métricas y Analítica de Margen**| **Permitido** | Prohibido | Prohibido |

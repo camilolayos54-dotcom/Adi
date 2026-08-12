@@ -93,3 +93,18 @@ nav:
       - 11. Protocolos de Comunicación: 02-project-kickoff/11. Protocolos de Comunicacion.md
       - 12. Actualización Registro de Riesgos: 02-project-kickoff/12. Actualizacion Registro de Riesgos.md
       - 13. Resumen Ejecutivo Fase 2: 02-project-kickoff/13. Resumen Ejecutivo Fase 2.md
+  - 03. Ingeniería de Requisitos:
+      - 00. Brief Ejecutivo Fase 3: 03-requirements-engineering/00-phase-3-brief.md
+      - 01. Diagrama de Contexto del Sistema: 03-requirements-engineering/1-system-context-diagram.md
+      - 02. Definición de Actores y Roles: 03-requirements-engineering/2-actor-and-role-definition.md
+      - 03. Glosario de Dominio: 03-requirements-engineering/3-domain-glossary.md
+      - 04. Registros de Elicitación: 03-requirements-engineering/4-elicitation-records.md
+      - 05. Descomposición de Módulos Funcionales: 03-requirements-engineering/5-functional-module-decomposition.md
+      - 06. Requisitos No Funcionales Globales: 03-requirements-engineering/6-non-functional-requirements-global.md
+      - 07. Especificaciones de Módulo:
+          - MOD-CAT Catálogo e Inventario: 03-requirements-engineering/7.modules-specification/1-MOD-CAT.md
+          - MOD-IMP Ingesta por Lotes: 03-requirements-engineering/7.modules-specification/2-MOD-IMP.md
+          - MOD-VEN Punto de Venta y Colillas: 03-requirements-engineering/7.modules-specification/3-MOD-VEN.md
+          - MOD-ADM Panel Administrativo: 03-requirements-engineering/7.modules-specification/4-MOD-ADM.md
+      - 08. SRS e Integración del Sistema: 03-requirements-engineering/8-srs-and-system-integration.md
+
