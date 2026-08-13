@@ -1,8 +1,32 @@
-# MkDocs build directory
-site/
+# Secretos y Entornos — NUNCA commitear claves ni credenciales
+.env
+.env.*
+!.env.example
+application-secret.yml
+application-local.properties
+*.pem
+*.key
+*.p12
 
-# IDE and OS
+# Artefactos de compilación y temporales de build (Maven/Gradle)
+target/
+build/
+.gradle/
+*.class
+*.jar
+*.war
+
+# Configuración privada de IDEs y Editores
 .idea/
 *.iml
+.classpath
+.project
+.settings/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Sistema operativo y logs
+*.log
 .DS_Store
 Thumbs.db
